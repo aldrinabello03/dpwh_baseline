@@ -1,0 +1,31 @@
+# .NET build artifacts
+backend/**/bin/
+backend/**/obj/
+backend/**/*.user
+backend/**/.vs/
+backend/**/appsettings.*.json
+!backend/**/appsettings.json
+!backend/**/appsettings.Development.json
+
+# Uploads directory
+backend/DPWH_HRIS.API/uploads/
+
+# Logs
+backend/DPWH_HRIS.API/logs/
+
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.suo
+*.swp
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace

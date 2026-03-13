@@ -1,0 +1,38 @@
+/* ===== PrimeNG 19 - Uses design tokens, no legacy CSS imports needed ===== */
+@import "primeicons/primeicons.css";
+
+/* ===== DPWH Custom Theme Variables ===== */
+:root {
+  --dpwh-navy: #1B2A4A;
+  --dpwh-navy-blue: #1B3A6B;
+  --dpwh-orange: #E85D26;
+  --dpwh-bg: #F5F5F5;
+  --dpwh-card: #FFFFFF;
+  --dpwh-text: #333333;
+  --dpwh-text-light: #666666;
+  --dpwh-border: #E9ECEF;
+  --dpwh-success: #2ECC71;
+  --dpwh-danger: #E74C3C;
+  --dpwh-warning: #F39C12;
+  --dpwh-info: #3498DB;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-size: 14px;
+  background: var(--dpwh-bg);
+  color: var(--dpwh-text);
+  line-height: 1.5;
+}
+
+.w-full { width: 100% !important; }
+.text-primary { color: var(--dpwh-navy) !important; }
+.text-accent { color: var(--dpwh-orange) !important; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }

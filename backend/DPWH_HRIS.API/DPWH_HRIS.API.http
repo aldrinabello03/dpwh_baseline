@@ -1,0 +1,6 @@
+@DPWH_HRIS.API_HostAddress = http://localhost:5244
+
+GET {{DPWH_HRIS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

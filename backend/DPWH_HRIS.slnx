@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DPWH_HRIS.API/DPWH_HRIS.API.csproj" />
+  <Project Path="DPWH_HRIS.Application/DPWH_HRIS.Application.csproj" />
+  <Project Path="DPWH_HRIS.Domain/DPWH_HRIS.Domain.csproj" />
+  <Project Path="DPWH_HRIS.Infrastructure/DPWH_HRIS.Infrastructure.csproj" />
+  <Project Path="DPWH_HRIS.Shared/DPWH_HRIS.Shared.csproj" />
+</Solution>
