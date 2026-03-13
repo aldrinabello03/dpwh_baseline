@@ -108,7 +108,9 @@ public class JwtAuthService : IAuthService
 
     private string GenerateJwtToken(User user)
     {
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"] ?? "DefaultKey-DPWH-HRIS-2026-SuperSecret!"));
+        var jwtKeyValue = _config["Jwt:Key"]
+            ?? throw new InvalidOperationException("JWT key is not configured. Set 'Jwt:Key' in appsettings.json or environment variables.");
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKeyValue));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var claims = new[]

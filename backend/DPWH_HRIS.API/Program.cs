@@ -23,7 +23,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // JWT Authentication
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "DPWH-HRIS-2026-SuperSecret-JWT-Key-Must-Be-At-Least-256-Bits!!";
+var jwtKey = builder.Configuration["Jwt:Key"]
+    ?? throw new InvalidOperationException("JWT key is not configured. Set 'Jwt:Key' in appsettings.json or environment variables.");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
